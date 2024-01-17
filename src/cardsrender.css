@@ -1,0 +1,58 @@
+.score{
+    margin-top: 1rem;
+    
+    
+}
+
+
+
+.cards-render{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1000px){
+    .card img{
+        width: 100px;
+        height: 100px;
+    }
+    .cards-render{
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+}
+
+@media (max-width: 500px){
+    .card img{
+        width: 80px;
+        height: 80px;
+    }
+    .score p{
+        padding: 0.5rem;
+    }
+    p{
+        padding: 0;
+        margin: 0;
+        
+    }
+}
+
+@media (max-width: 300px){
+    .card img{
+        width: 60px;
+        height: 60px;
+        padding: 0;
+    }
+    .score p{
+        padding: 0.5rem;
+    }
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        padding: 1rem;
+        margin: 0;
+    }
+   
+}
